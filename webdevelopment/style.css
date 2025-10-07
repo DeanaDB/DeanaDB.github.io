@@ -65,7 +65,7 @@ html {
 	margin-top: 2rem;
 	color: rgb(8, 8, 8);
 }
-.info a:hover {
+.cta-button:hover {
 	color: #fff;
 }
 .resume-button {
@@ -73,9 +73,9 @@ html {
 	background-color: #f97d00;
 	border-radius: 35px;
 	font-size: 1.8rem;
-	float: right;
-	padding: 20px;
-	margin: 10px;
+	float: center;
+	padding: 0.5em;
+	margin: 27em;
 	border: 1px solid #b6610b;
 	color: rgb(8, 8, 8);
 
