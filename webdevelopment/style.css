@@ -83,20 +83,3 @@ html {
 .resume-button:hover {
 	color: #fff;
 }
-.main-nav{
-	list-style-type: none;
-	font-size: 1.8em;
-	height: 1em;
-	background-color: #6ee6b1;
-	color: black;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
-	align-items: center;
-	gap: 1em;
-	padding: 1em;
-}
-.main-nav:hover{
-	color: white;
-}
