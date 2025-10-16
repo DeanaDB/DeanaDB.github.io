@@ -108,3 +108,19 @@ html {
 .resume-button:hover {
 	color: #fff;
 }
+
+.explore-cta{
+	text-decoration: none;
+	background-color: #f97d00;
+	border-radius: 35px;
+	font-size: 1.8rem;
+	padding: 1rem 2.5rem;
+	margin: 2em 1.5em;
+	border: 1px solid #b6610b;
+	
+
+	color: rgb(8, 8, 8);
+}
+ .explore-cta:hover{
+	color: #fff;
+ }
