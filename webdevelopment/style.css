@@ -21,8 +21,8 @@ html {
 	background-position: center;
     background-repeat: no-repeat;
 	color: white;
-	
 }
+
 .container {
     width: 100%;
     height: 100%;
@@ -30,20 +30,22 @@ html {
     text-align: left;
     padding-left: 50px;
 }
+
 .info h1 {
 	font-size: 4rem;
-    margin: 0 0 2rem 0;
-	
+    margin: 0 0 2rem 0;	
 }
+
 .info p {
 	font-size: 1rem;
 	max-width: 55%;
 	margin: 0;
 	line-height: 1.7rem;
 	text-align: left;
-	margin-top: 10rem;
+	margin-top: 1rem;
 	padding-left: 10px;
 }
+
 .info blockquote {
 	font-size: 1rem;
 	max-width: 45%;
@@ -53,6 +55,7 @@ html {
 	margin-top: 10rem;
 	padding-left: 10px;
 }
+
 .cta-button {
 	text-decoration: none;
 	display: inline-block;
@@ -65,9 +68,31 @@ html {
 	margin-top: 2rem;
 	color: rgb(8, 8, 8);
 }
+
 .cta-button:hover {
 	color: #fff;
 }
+
+.credentials-ed{
+	list-style-type: square;
+	font-size: 1rem;
+	color: rgb(77, 73, 73);
+	margin: 1.0rem; 
+	padding: 1.0rem 3.0rem;
+}
+
+.degree{
+	list-style-type: circle;
+}
+
+.credentials-cert{
+	list-style-type: square;
+	font-size: 1rem;
+	color: rgb(77, 73, 73);
+	margin: 1.0rem; 
+	padding: 1.0rem 3.0rem;
+}
+
 .resume-button {
 	text-decoration: none;
 	background-color: #f97d00;
@@ -78,8 +103,8 @@ html {
 
 	border: 1px solid #b6610b;
 	color: rgb(8, 8, 8);
-
 }
+
 .resume-button:hover {
 	color: #fff;
 }
