@@ -18,7 +18,7 @@
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="nav.css">
     </head> 
-    <body>
+    <body class="internal-page">
         <header>
             <!--Will contain image and navigation-->
             <img src="logo.png" alt="Middle School Science Logo" class="logo">
@@ -26,40 +26,59 @@
                 <ul class="nav">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="lessons.html">Lessons</a></li>
+                    <li><a href="lessons.html">Lessons <span>▼</span></a>
+                        <ul class="dropdown">
+                            <li><a href="#">Lesson 1</a></li>
+                            <li><a href="#">Lesson 2</a></li>
+                            <li><a href="#">Lesson 3</a></li>
+                        </ul>
+                    </li>
                     <li><a href="resources.html">Explore</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
         </header>
         <!--add an image to go with welcome letter-->
-        <h1>Explore and Learn</h1>
+    <main>
+        <h1 class="resource-h">Explore and Learn</h1>
+        <h3 class="resource-p">Take a few minutes to explore these science websites! Each one offers videos, games, and activities that will spark your curiosity and help you learn more about the world around you.</h3>
         
-        <img src="Khan Academy Image.png">
-        <p>Discover a wide range of science ideas through interactive lessons.</p>
-        <a href="https://www.khanacademy.org/?utm_source=chatgpt.com" class="explore-cta">Explore</a>
-            <!--Khan Academy. (2025). Khan Academy. Khan Academy; Khan Academy. https://www.khanacademy.org/-->
+        <div class="resource-box">
+            <img src="Khan Academy Image.png">
+            <p>Discover a wide range of science ideas through interactive lessons.</p>
+            <a href="https://www.khanacademy.org/?utm_source=chatgpt.com" class="explore-cta">Explore</a>
+                <!--Khan Academy. (2025). Khan Academy. Khan Academy; Khan Academy. https://www.khanacademy.org/-->
+        </div>
         
+        <div class="resource-box">
             <img src="National Geographic Kids Image.png">
-        <p>Games, videos, and more about animals, habitats, countries, and cultures.</p>
+            <p>Games, videos, and more about animals, habitats, countries, and cultures.</p>
             <a href="https://kids.nationalgeographic.com/?utm_source=chatgpt.com" class="explore-cta">Explore</a>
-            <!--National Geographic Kids. (2015). National geographic kids. National Geographic Kids; National Geographic. -->
-        <img src="NASA Climate Kids Image.png">
-        <p>Explore information about climate change through videos, games, activities, and more.</p>
+                <!--National Geographic Kids. (2015). National geographic kids. National Geographic Kids; National Geographic. -->
+        </div>
+
+        <div class="resource-box"> 
+            <img src="NASA Climate Kids Image.png">
+            <p>Explore information about climate change through videos, games, activities, and more.</p>
             <a href="https://climatekids.nasa.gov/?utm_source=chatgpt.com" class="explore-cta">Explore</a>
-            <!--NASA. (2019). NASA Climate Kids. Nasa.gov. https://climatekids.nasa.gov/-->
-        <img src="Missouri Conversation Image.png">
-        <p>Discover the habitat, diet, and life cycle of Missouri’s animals, plants, and mushrooms. Field Guide A-Z</p>
+                <!--NASA. (2019). NASA Climate Kids. Nasa.gov. https://climatekids.nasa.gov/-->
+        </div>
+
+        <div class="resource-box">
+            <img src="Missouri Conversation Image.png">
+            <p>Discover the habitat, diet, and life cycle of Missouri’s animals, plants, and mushrooms. Field Guide A-Z</p>
             <a href="https://mdc.mo.gov/discover-nature/field-guide?utm_source=chatgpt.com" class="explore-cta">Explore</a>
-            <!--Field Guide. (2021). Missouri Department of Conservation. https://mdc.mo.gov/discover-nature/field-guide-->
-        <img src="Nova image.png">
-        <p>Science videos about real-world scientific topics.</p>
+                <!--Field Guide. (2021). Missouri Department of Conservation. https://mdc.mo.gov/discover-nature/field-guide-->
+        </div>
+
+        <div class="resource-box">   
+            <img src="Nova image.png">
+            <p>Science videos about real-world scientific topics.</p>
             <a href="https://www.pbs.org/wgbh/nova/?utm_source=chatgpt.com" class="explore-cta">Explore</a>
-            <!--Home. (2000). Pbs.org. https://www.pbs.org/wgbh/nova/-->
-
-
-                
-        <!--Add a button that directs to contact page-->
+                <!--Home. (2000). Pbs.org. https://www.pbs.org/wgbh/nova/-->
+        </div>        
+            <!--Add a button that directs to contact page-->
+    </main>
         
         <footer>
             <!--my name and current date-->
