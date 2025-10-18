@@ -3,7 +3,7 @@
 <!--language attribute for accessibilty-->
 <html lang="en">
     <!--Name: Deana Bartholomew
-    Date: 10/09/2025
+    Date: 10/19/2025
     Page: about
     Description: About Me Page-->
 <head>
@@ -18,12 +18,32 @@
 
     <!--link to external CSS for styling-->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
 </head> 
 
-<body>
+<body class="internal-page">
  
     <header>
         <!--Will contain image and navigation-->
+        <header>
+            <!--Will contain image and navigation-->
+            <img src="logo.png" alt="Middle School Science Logo" class="logo">
+            <nav>
+                <ul class="nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="lessons.html">Lessons <span>▼</span></a>
+                        <ul class="dropdown">
+                            <li><a href="#">Lesson 1</a></li>
+                            <li><a href="#">Lesson 2</a></li>
+                            <li><a href="#">Lesson 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="resources.html">Explore</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
     </header>
 
     <main>
