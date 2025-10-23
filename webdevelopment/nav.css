@@ -7,6 +7,7 @@
     font-weight: normal;
     font-style: normal;
 }
+
 html {
 	font-family: 'introrustg-base2line', sans-serif;
 	font-size: 20px;
@@ -44,6 +45,8 @@ span{
 	background: #6ee6b1;
 	position: absolute;
 	display: none;
+	text-align: center;
+	transform: translateX(-15%);	
 }
 
 .nav li:hover .dropdown{
@@ -54,5 +57,4 @@ span{
 	height: auto;
 	align-items: center;
 	margin: 1rem;
-	
 }
