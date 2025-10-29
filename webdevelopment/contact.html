@@ -1,0 +1,80 @@
+<!--This is the main HTML5 document declaration-->
+<!DOCTYPE html>
+<!--language attribute for accessibility-->
+<html lang="en">
+    <!--Name: Deana Bartholomew
+    Date: 11/02/2025
+    Page: contactpage
+    Description: Boiler Plate-->
+    <head>
+        <meta charset="utf-8">
+        <!--screen size layout-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--title of my website, will show up on tab of open window-->
+        <title>
+            Contact
+        </title>
+        <!--link to external CSS for styling-->
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="nav.css">
+        <link rel="icon" type="image/png" href="favicon.png">
+    </head> 
+    <body class="internal-page">
+        <header>
+            <!--Will contain image and navigation-->
+            <img src="logo.png" alt="Middle School Science Logo" class="logo">
+            <nav>
+                
+                <ul class="nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="lessons.html">Lessons <span>▼</span></a>
+                        <ul class="dropdown">
+                            <li><a href="#">Lesson 1</a></li>
+                            <li><a href="#">Lesson 2</a></li>
+                            <li><a href="#">Lesson 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="resources.html">Explore</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!--add an image to go with welcome letter-->
+        <h1 class="contact-h">Contact Me</h1>
+        <main>
+        <p>Have a question, idea, or need a little extra help with science? I’d love to hear from you! Students and parents are always
+            welcome to reach out with questions about classwork, resources, or upcoming lessons. Communication is an important part
+            of learning, so please don’t hesitate to contact me.  I’m here to support your curiosity and success in science.</p>
+        <form action="mailto:ddb0fb@umsystem.edu?Subject=Form%20Submission" method="post" enctype="text/plain">
+            <p class="title-p">Title:
+                <select name="Title" class="title-drop">
+                    <option>Mr.</option>
+                    <option>Ms.</option>
+                    <option>Mrs.</option>
+                </select>
+            </p>
+            <ul class="contact-list">
+                <li><label for="form-name">Name:</label> <input type="text" name="fullname" autofocus required placeholder="First and Last Name" id="form-name"></li>
+                <li><label for="form-email">Email:</label> <input type="email" name="email" required placeholder="Email" id="form-email"></li> 
+                <li><label for="form-message">Your Message:</label> <textarea name="message" rows="10" cols="80" required placeholder="Type your message here." id="form-message"></textarea></li>
+                <li><input type="radio" name="urgent" value="urgent"> Urgent Message <small>(Please click if this is an urgent message.)</small></li>
+            </ul>
+            <p><input type="submit" value="Send Message" class="submit"> <input type="reset" value="Clear Form" class="reset"></p>
+        </form>
+        </main>
+        
+        <footer>
+            <!--my name and current date-->
+            <p><img src="phone.png" alt="phone">573-864-3871</p>
+            <!--https://icons8.com/icon/14181/phone-->
+            <p><img src="mail.png" alt="envelope">ddb0fb@umsystem.edu</p>
+            <!--https://icons8.com/icon/i3XElI5CmcBP/email-->
+            <p><img src="copyright.png" alt="copyright">Deana Bartholomew  11/02/2025</p>
+            <!--https://icons8.com/icon/i3XElI5CmcBP/email-->
+        
+        </footer>
+    </body>
+   </html>
+        
+    
