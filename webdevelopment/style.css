@@ -12,6 +12,34 @@ html {
 	font-family: 'introrustg-base2line', sans-serif;
 	font-size: 20px;
 	width: 100%;
+	height: 100%;
+
+}
+
+footer {
+	font-size: 0.7rem;
+	width: 100%;
+	background-color: #6ee6b1;
+	color: black;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0;
+	padding: 0 5rem;
+	font-family: Georgia, serif;
+	box-sizing: border-box;
+}
+footer img {
+	width: 30px;
+	height: 30px;
+
+}
+
+footer p img {
+	vertical-align: middle;
+	margin-right: 0.5rem;
 }
 
 h3::first-letter { font-size: 2.0rem; 
@@ -144,8 +172,81 @@ p::before{
 	text-align: left;
 	margin-top: 6rem;
 }
+
+@media print {
+	body.about-page nav,
+	body.about-page img,
+	body.about-page figure,
+	body.about-page a {display: none;}
+
+	body.about-page {
+		background: white;
+		font-size: 12pt;
+		font-family: Georgia, serif;
+		color: black;
+		line-height: 1.3;
+		margin: 0;
+		padding: 1in;
+	}
+	h1 {
+		font-size: 16pt;
+		font-family: Georgia, serif;
+		margin: 0;
+		padding-bottom: 0.5in;
+	}
+	body.about-page p {
+		margin: 0;
+		padding: 0;
+	}
+	body.about-page h3::first-letter {
+		font-size: 14pt;
+		color: black;
+	}
+	h3.ed-h {
+		font-size: 14pt;
+		font-family: Georgia, serif;
+		color: black; 
+		margin: 0;
+		padding-top: 0.5in;
+	}
+	.credentials-ed {
+		font-size: 12pt;
+		font-family: Georgia, serif;
+		color: black;
+		margin: 0;
+		padding-left: 0.5in;	
+	}
+	.credentials-ed strong {
+		font-weight: normal;
+	}
+
+	.credentials-cert {
+		font-size: 12pt;
+		font-family: Georgia, serif;
+		color: black;
+		margin: 0;
+		padding-left: 0.5in;	
+	}
+	.credentials-cert strong {
+		font-weight: normal;
+	}
+	footer {
+		background-color: white;
+		color: black;
+		margin: 0;
+		padding-top: 0.5in;
+		font-size: 12pt;
+		font-family: Georgia, serif;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: nowrap;
+		white-space: nowrap;
+	}
+}
 /*Resources*/
-.explore-cta{
+.explore-cta {
 	text-decoration: none;
 	background-color: #f97d00;
 	font-family: 'introrustg-base2line';
@@ -156,11 +257,11 @@ p::before{
 	border: 1px solid #b6610b;
 	color: rgb(8, 8, 8);
 }
- .explore-cta:hover{
+ .explore-cta:hover {
 	color: #fff;
  }
 
-.resource-box{
+.resource-box {
 	width: 350px;
 	background-color: #6ee6b1;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -176,11 +277,76 @@ p::before{
 	flex-direction: column;
 }
 
-.resource-p{
+.resource-p {
 	font-family: 'introrustg-base2line';
 	text-align: center;
 }
 
-.resource-h{
+.resource-h {
 	text-align: center;
+}
+
+/*Contact*/
+.contact-h {
+	text-align: center;
+}
+.contact-list {
+	list-style-type: none;
+
+}
+.title-drop {
+	margin: 0;
+	
+}
+.title-p {
+	margin: 0;
+	
+}
+#form-name {
+	margin: 1rem;
+	width: 30%;
+	height: 1.5rem
+}
+#form-email {
+	margin: 1rem;
+	width: 30%;
+	height: 1.6rem
+}
+#form-message {
+	margin: 1rem;
+	margin-left: 4.5rem;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	
+}
+.submit {
+	text-decoration: none;
+	background-color: #f97d00;
+	border-radius: 35px;
+	font-family: 'introrustg-base2line';
+	font-size: 1rem;
+	padding: 0.5em;
+	margin: 5rem;
+	border: 1px solid #b6610b;
+	color: rgb(8, 8, 8);
+	box-shadow: 6px 6px 5px gray;
+}
+.submit:hover {
+	color: #fff;
+}
+.reset {
+	text-decoration: none;
+	background-color: #f97d00;
+	border-radius: 35px;
+	font-family: 'introrustg-base2line';
+	font-size: 1rem;
+	padding: 0.5em;
+	margin: 5rem;
+	border: 1px solid #b6610b;
+	color: rgb(8, 8, 8);
+	box-shadow: 6px 6px 5px gray;
+}
+.reset:hover {
+	color: #fff;
 }

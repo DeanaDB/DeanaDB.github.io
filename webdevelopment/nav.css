@@ -52,6 +52,7 @@ span{
 .nav li:hover .dropdown{
 	display: block;
 }
+
 .logo{
 	width: 7rem;
 	height: auto;
