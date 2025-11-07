@@ -42,7 +42,7 @@ footer p img {
 	margin-right: 0.5rem;
 }
 
-h3::first-letter { font-size: 2.0rem; 
+h3::first-letter { font-size: 1.5rem; 
 					color: #f97d00;
 }
 p{
@@ -117,17 +117,24 @@ p::before{
 	color: #fff;
 }
 
-/*About Me*/
+/*--About Me--*/
+.about-h1 {
+	font-size: 1.5rem;
+	justify-self: center;
+}
+.about-p {
+	font-size: 1rem;
+}
 .ed-h{
-	margin-left: 2rem;
-	margin-top: 5rem;
+	font-size: 1rem;
+	margin-left: 7rem;
 }
 .credentials-ed{
 	list-style-type: square;
-	font-size: 1rem;
+	font-size: 0.9rem;
+	font-family: sans-serif;
 	color: rgb(77, 73, 73);
-	margin-left: 5rem;
-	margin-bottom: 5rem;
+	margin-left: 8rem;
 }
 
 .degree{
@@ -136,10 +143,10 @@ p::before{
 
 .credentials-cert{
 	list-style-type: square;
-	font-size: 1rem;
+	font-size: 0.9rem;
+	font-family: sans-serif;
 	color: rgb(77, 73, 73);
-	margin-left: 5rem;
-	margin-bottom: 5rem;
+	margin-left: 8rem;
 }
 
 .resume-button {
@@ -157,22 +164,138 @@ p::before{
 .resume-button:hover {
 	color: #fff;
 }
+
 .headshot{
 	width: 150px;
-	height: auto;
 	border-radius: 20px;
 	box-shadow: 6px 6px 5px gray;
-	margin: 1rem 3rem;
 }
 .aboutmevideo{
 	border-radius: 20px;
 	box-shadow: 6px 6px 5px #f97d00;
 }
 .video{
-	text-align: left;
-	margin-top: 6rem;
+	text-align: center;
+}
+#layout-about {
+	display: grid;
+	grid-template-rows: 0.13fr 0.07fr 0.32fr 0.43fr 0.05fr;
+	grid-template-columns: 0.5fr 2fr 1fr 1fr;
+	grid-template-areas: 
+		"logo logo logo logo"
+		"nav nav nav nav"
+		"img main main main"
+		"ed ed resume video"
+		"footer footer footer footer";
+	gap: 0.25rem;
+	padding: 0.25rem;
+}
+.logo {
+	grid-area: logo;
+	justify-self: center;
+	align-self: center;
+}
+.nav-bar {
+	grid-area: nav;
+}
+.headshot {
+	grid-area: img;
+	justify-self: center;
+	align-self: center;
+}
+.main-p {
+	grid-area: main;
+	font-size: 0.9rem;	
+}
+.ed {
+	grid-area: ed;
+}
+.resume-button {
+	grid-area: resume;
+	display: inline-block;
+	text-align: center;
+	padding: 0.5rem 1rem;
+	justify-self: center;
+	align-self: start;
+}
+.video {
+	grid-area: video;
+	justify-self: center;
+	align-self: center;
+	width: 100%;
 }
 
+footer {
+	grid-area: footer;
+}
+/*--responsive for tablet--*/
+@media screen and (max-width: 900px) {
+	#layout-about {
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas:
+		"logo logo"
+		"nav nav"
+		"img main"
+		"ed resume"
+		"video video"
+		"footer footer"
+	}
+	.main-p {
+		padding: 0.5rem 1rem;
+	}
+	.resume-button {
+		justify-self: center;
+	}
+	.video {
+		text-align: center;
+	}
+	footer {
+		justify-self: center;
+		align-self: center;
+}
+
+/*--responsive for mobile device--*/
+@media screen and (max-width: 600px) { 
+	#layout-about { 
+		grid-template-columns: 1fr;
+		grid-template-areas:
+			"logo"
+			"nav"
+			"img"
+			"main"
+			"ed"
+			"resume"
+			"video"
+			"footer";
+	}
+	footer {
+		justify-self: center;
+		align-self: center;
+	}
+	.main-p {
+		text-align: center;
+	}
+	.ed-h {
+		justify-self: center;
+		text-align: center;
+	}
+	.nav-bar {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 0.5rem;
+		padding: 0;
+		margin: 0;
+}
+.resume-button {
+	width: fit-content;
+}
+
+}
+video {
+	max-width: 100%;
+	height: auto;
+}
 @media print {
 	body.about-page nav,
 	body.about-page img,
@@ -349,4 +472,5 @@ p::before{
 }
 .reset:hover {
 	color: #fff;
+	}
 }

@@ -23,12 +23,12 @@
 </head> 
 
 <body class="internal-page about-page">
- 
-    <header>
+ <div id="layout-about">
+   
         <!--Will contain image and navigation-->
             <!--Will contain image and navigation-->
             <img src="logo.png" alt="Middle School Science Logo" class="logo">
-            <nav>
+            <nav class="nav-bar">
                 <ul class="nav">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
@@ -43,12 +43,12 @@
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
-        </header>
+        
+        
+        <img src="headshot.jpg" alt="headshot photo" class="headshot">
 
-
-    <main>
-        <h1>Meet Mrs. Bartholomew</h1>
-            <img src="headshot.jpg" alt="headshot photo" class="headshot">
+        <div class="main-p">
+            <h1 class="about-h1">Meet Mrs. Bartholomew</h1>
             <p>Hi, I’m Mrs. Bartholomew!</p>
              
             <p>I have been a <strong>middle school science teacher</strong> for 16 years.  I love helping students ask big questions and discover how the world works. Learning and teaching are two of my favorite things.  I believe it’s important to <em>stay curious</em> and appreciate the little things in life.  Over the years, teaching middle school students has brought so many fun and meaningful experiences in the classroom.  I am so excited to learn and grow with you this year!
@@ -57,7 +57,8 @@
             <p>
                 I am married to my best friend.  We have two awesome sons who keep life exciting and full of laughter.  When I am not teaching, I love being outdoors enjoying nature, spending quality time with my family, or reading a good book. 
             </p>
-
+        </div>
+        <div class="ed">    
         <h3 class="ed-h">Education</h3>
             <ul class="credentials-ed">
                     <li><strong>University of Missouri-Columbia, MO</strong> Expected July 2026
@@ -77,23 +78,7 @@
                             <li>Bachelor of Science in Nutrition and Physical Fitness</li>
                         </ul>
                     </li>
-            </ul>
-
-        <a href="Bartholomewresume.pdf" class="resume-button">Resume</a>
-
-        <figure class="video">
-            <video poster="video-editing.png" 
-                width="350" 
-                height="250" 
-                controls 
-                src="Aboutme-fv.mp4" 
-                alt="About me video" 
-                class="aboutmevideo">
-                Sorry, your browser doesn't support HTML5 video.</video>
-            
-            <figcaption>Press play to watch a message to you.</figcaption>
-        </figure>
-        <!--<a href="https://www.flaticon.com/free-icons/video-editing" title="video editing icons">Video editing icons created by FreshForYou - Flaticon</a>-->
+                </ul>
         
     
         <h3 class="ed-h">Certifications</h3>
@@ -105,7 +90,20 @@
 
             <!--add image that is a link to about me video-->
             <!--add image/link to resume in pdf form-->
-    </main>   
+           </div> 
+          <a href="Bartholomewresume.pdf" class="resume-button">Resume</a> 
+           <figure class="video">
+            <video poster="video-editing.png" 
+                width="350" 
+                height="250" 
+                controls 
+                src="Aboutme-fv.mp4" 
+                class="aboutmevideo">
+                Sorry, your browser doesn't support HTML5 video.</video>
+            
+            <figcaption>Press play to watch a message to you.</figcaption>
+            <!--<a href="https://www.flaticon.com/free-icons/video-editing" title="video editing icons">Video editing icons created by FreshForYou - Flaticon</a>-->
+        </figure>  
 
     <footer>
             <!--my name and current date-->
@@ -117,7 +115,7 @@
             <!--https://icons8.com/icon/i3XElI5CmcBP/email-->
         
         </footer>
-
+  </div>
 </body>
 
 </html>
