@@ -59,3 +59,39 @@ span{
 	/*align-items: center;*/
 	/*margin: 1rem;*/
 }
+.mobile-menu {
+	display: none;
+}
+.hamburger {
+	display: none;
+}
+.hamburger img {
+	width: 32px;
+	height: 32px;
+}
+#menu-toggle:checked~.mobile-menu {
+	display: block;
+}
+#menu-toggle {
+	display: none;
+}
+.mobile-menu {
+		display: none;
+	}
+@media screen and (max-width: 600px) {
+	.nav-bar {
+		display: none;
+	}
+	.hamburger {
+		display: flex;	
+	}
+	.mobile-menu {
+		flex-direction: column;
+	}
+	.mobile-menu ul { 
+		display: flex;
+		flex-direction: column;
+		list-style: none;
+		gap: 1rem;
+	}
+}
