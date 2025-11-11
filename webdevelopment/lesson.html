@@ -1,0 +1,134 @@
+<!--This is the main HTML5 document declaration-->
+<!DOCTYPE html>
+<!--language attribute for accessibility-->
+<html lang="en">
+    <!--Name: Deana Bartholomew
+    Date: 11/16/2025
+    Page: lessons
+    Description: Boiler Plate-->
+    <head>
+        <meta charset="utf-8">
+        <!--screen size layout-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--title of my website, will show up on tab of open window-->
+        <title>
+            Lessons
+        </title>
+        <!--link to external CSS for styling-->
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="nav.css">
+        <link rel="icon" type="image/png" href="favicon.png">
+    </head> 
+    <body class="internal-page">
+       <div id="lessons-layout">
+        <img src="logo.png" alt="Middle School Science Logo" class="logo"> 
+            <nav class="nav-bar">
+                
+                <ul class="nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="lessons.html">Lessons <span>▼</span></a>
+                        <ul class="dropdown">
+                            <li><a href="#lesson1">Lesson 1</a></li>
+                            <li><a href="#lesson2">Lesson 2</a></li>
+                            <li><a href="#lesson3">Lesson 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="resources.html">Explore</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <!--mobile device navigation-->
+            
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="hamburger"><img src="hamburger-menu.png" alt="menu icon"></label>
+                <!--https://icons8.com/icon/8113/menu-->
+                <nav class="mobile-menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="lessons.html">Lessons</a></li>
+                        <li><a href="resources.html">Explore</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+    
+        <!--add an image to go with welcome letter-->
+        <div class="main-h">
+        <h1>Lessons</h1>
+        <h2>Strange But True: Nature’s Ultimate Team-Ups!</h2>
+        <p>Ever heard of a fish that gets its teeth cleaned by another fish—or a bird that hitches a ride on a rhino’s back? Welcome to the wild world of symbiosis, where living things team up in surprising ways to survive and thrive. In this lesson, you'll explore real-life relationships in nature that range from helpful to harmful—and everything in between. Get ready to dive into ecosystems and discover how creatures connect, cooperate, and compete!
+        </p>
+        </div>
+        <div class="lesson1p">
+            <h3 id="lesson1">Lesson 1</h3>
+                <p>Symbiosis: Commensalism</p>
+
+                <p>“I take, but I don’t hurt. I share space, but not the rewards. Who am I in nature?”</p>
+
+                <p>Learning Objective:<br>
+            Given a set of ecosystem scenarios and images, the student will be able to identify and explain examples of the symbiotic     relationship of commensalism in nature with 80% accuracy.	
+                </p>
+        </div>
+            <img src="commensalism-image.png" alt="commensalism image" class="commensalism-img">
+
+            <a href="commensalism-worksheet.pdf" class="commensalism-button">Worksheet</a>
+      
+      <div class="lesson2p">  
+         <h3 id="lesson2">Lesson 2</h3>
+             <p>Symbiosis: Mutualism</p>
+
+            <p>“I give and I get. I help and I’m helped. Who am I in nature?”</p>
+
+            <p>Learning Objective:<br> 
+            Given a set of ecosystem scenarios and images, the student will be able to identify and explain examples of the symbiotic relationship of mutualism in nature with 80% accuracy.
+            </p>
+      </div>
+            <a href="https://edpuzzle.com/media/687027880fb62634fef71e64" class="mutualism-link">
+            <img src="video-editing.png" alt="video editing" class="mutualism-video"><span class="video-text">Watch Me!</span>
+            </a>
+                <!--<a href="https://www.flaticon.com/free-icons/video-editing" title="video editing icons">Video editing icons created by FreshForYou - Flaticon</a>-->
+
+            <a href="mutualism-worksheet.pdf" class="mutualism-button">Worksheet</a>
+        
+       <div class="lesson3p">
+          <h3 id="lesson3">Lesson 3</h3>
+            <p>Symbiosis: Parasitism </p>
+
+            <p>I take and I hurt. I feed but you suffer. Who am I in nature?”</p>
+
+            <p>Learning Objective:<br> 
+            Given a set of ecosystem scenarios and images, the student will be able to identify and explain examples of the symbiotic relationship of parasitism in nature with 80% accuracy.
+            </p>
+        </div>
+
+            <figure class="video-parasitism">
+                <video poster="video-editing.png" 
+                    width="350" 
+                    height="250" 
+                    controls 
+                    src="parasitism-video.mp4" 
+                    class="aboutmevideo">
+                    Sorry, your browser doesn't support HTML5 video.</video>
+                    <figcaption>Press play to watch a message to you.</figcaption>
+                <!--<a href="https://www.flaticon.com/free-icons/video-editing" title="video editing icons">Video editing icons created by FreshForYou - Flaticon</a>-->
+            </figure>  
+
+            <a href="parasitism-worksheet.pdf" class="parasitism-button">Worksheet</a>
+
+        
+        <footer>
+            <!--my name and current date-->
+            <p><img src="phone.png" alt="phone">573-864-3871</p>
+            <!--https://icons8.com/icon/14181/phone-->
+            <p><img src="mail.png" alt="envelope">ddb0fb@umsystem.edu</p>
+            <!--https://icons8.com/icon/i3XElI5CmcBP/email-->
+            <p><img src="copyright.png" alt="copyright">Deana Bartholomew  11/16/2025</p>
+            <!--https://icons8.com/icon/i3XElI5CmcBP/email-->
+        
+        </footer>
+     </div>   
+    </body>
+   </html>
+        
+    
