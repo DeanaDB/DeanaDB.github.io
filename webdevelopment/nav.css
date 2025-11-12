@@ -73,7 +73,10 @@ span{
     display: block;
 }
 
-
+.mobile-menu a {
+	text-decoration: none;
+	color: black;
+}
 
 #menu-toggle {
 	display: none;
@@ -100,10 +103,22 @@ span{
 	#layout-about, #menu-toggle:checked ~ .mobile-menu {
     display: flex;
     flex-direction: column;
+	
 }
+	#layout-about, .mobile-menu a {
+		text-decoration: none;
+		gap: 1rem;
+		color: black;
+	}
+
 
 #lessons-layout, #menu-toggle:checked ~ .mobile-menu {
     display: flex;
     flex-direction: column;
 }
+#lesson-layout, .mobile-menu a {
+		text-decoration: none;
+		gap: 1rem;
+		color: black;
+	}
 }

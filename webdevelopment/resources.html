@@ -3,7 +3,7 @@
 <!--language attribute for accessibility-->
 <html lang="en">
     <!--Name: Deana Bartholomew
-    Date: 10/30/2025
+    Date: 11/16/2025
     Page: resources
     Description: resources for students-->
     <head>
@@ -23,21 +23,36 @@
         <header>
             <!--Will contain image and navigation-->
             <img src="logo.png" alt="Middle School Science Logo" class="logo">
-            <nav>
+            <nav class="nav-bar">
                 <ul class="nav">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="lesson.html">Lessons <span>▼</span></a>
                         <ul class="dropdown">
-                            <li><a href="#">Lesson 1</a></li>
-                            <li><a href="#">Lesson 2</a></li>
-                            <li><a href="#">Lesson 3</a></li>
+                            <li><a href="lesson1">Lesson 1</a></li>
+                            <li><a href="lesson2">Lesson 2</a></li>
+                            <li><a href="lesson3">Lesson 3</a></li>
                         </ul>
                     </li>
                     <li><a href="resources.html">Explore</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
+
+            <!--mobile device navigation-->
+            
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="hamburger"><img src="hamburger-menu.png" alt="menu icon"></label>
+                <!--https://icons8.com/icon/8113/menu-->
+                <nav class="mobile-menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="lesson.html">Lessons</a></li>
+                        <li><a href="resources.html">Explore</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
         </header>
         <!--add an image to go with welcome letter-->
     <main>
@@ -87,7 +102,7 @@
             <!--https://icons8.com/icon/14181/phone-->
             <p><img src="mail.png" alt="envelope">ddb0fb@umsystem.edu</p>
             <!--https://icons8.com/icon/i3XElI5CmcBP/email-->
-            <p><img src="copyright.png" alt="copyright">Deana Bartholomew  10/30/2025</p>
+            <p><img src="copyright.png" alt="copyright">Deana Bartholomew  11/16/2025</p>
             <!--https://icons8.com/icon/i3XElI5CmcBP/email-->
         
         </footer>

@@ -294,14 +294,30 @@ p::before{
 			justify-self: center;
 			align-self: center;
 		}
-
 		.main-p {
+			justify-self: center;
 			text-align: center;
+			margin: 0;
 		}
 
 		.ed-h {
-			justify-self: center;
-			text-align: center;
+			justify-self: left;
+			text-align: left;
+			margin: 0;
+			padding: 1rem;
+		}
+
+		.credentials-ed {
+			justify-self: left;
+			text-align: left;
+			margin: 0;
+
+		}
+
+		.credentials-cert {
+			justify-self: left;
+			text-align: left;
+			margin: 0;
 		}
 	
 		.resume-button {
@@ -458,7 +474,10 @@ p::before{
 	margin-top: 1.5rem;
 	color: black;	
 }
-
+.video-parasitism {
+	text-align: center;
+	font-size: 1.5rem;
+}
 .parasitism-button {
 		text-decoration: none;
 		background-color: #f97d00;
@@ -625,6 +644,7 @@ p::before{
 				"video3"
 				"worksheet3"
 				"footer";
+			font-family: Georgia, serif;
 			}
 		}
 /*Resources*/
