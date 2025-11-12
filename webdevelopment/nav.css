@@ -69,9 +69,12 @@ span{
 	width: 32px;
 	height: 32px;
 }
-#menu-toggle:checked~.mobile-menu {
-	display: block;
+#menu-toggle:checked ~ .mobile-menu {
+    display: block;
 }
+
+
+
 #menu-toggle {
 	display: none;
 }
@@ -94,4 +97,13 @@ span{
 		list-style: none;
 		gap: 1rem;
 	}
+	#layout-about, #menu-toggle:checked ~ .mobile-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+#lessons-layout, #menu-toggle:checked ~ .mobile-menu {
+    display: flex;
+    flex-direction: column;
+}
 }
