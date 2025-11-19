@@ -143,7 +143,7 @@ p::before{
 	}
 
 	table, th, td {
-		border: 2px, solid rgb(70, 64, 64);
+		border: 2px solid rgb(70, 64, 64);
 		border-collapse: collapse;
 	}
 
@@ -239,7 +239,6 @@ p::before{
 			"ed ed resume video"
 			"footer footer footer footer";
 		gap: 0.25rem;
-		padding: 0.25rem;
 	}
 
 	.logo {
