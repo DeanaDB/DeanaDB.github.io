@@ -142,12 +142,42 @@ p::before{
 		font-size: 1rem;
 	}
 
-	.ed-h{
+	table, th, td {
+		border: 2px, solid rgb(70, 64, 64);
+		border-collapse: collapse;
+	}
+
+	.cap {
+		font-size: 1.5rem;
+	}
+	table {
+		box-shadow: 6px 6px 5px gray;
+		margin: 5rem 2rem;
+	}
+
+	th, td {
+		font-family: roboto, sans-serif;
+		padding: 0.25rem 0.5rem;
+	}
+
+	th {
+		background-color: #6cbbba
+	}
+
+	td {
+		text-align: center;
+	}
+	 
+	tr:nth-child(even) {
+		background-color: #a2ebe9;
+	}
+
+	.ed-h {
 		font-size: 1rem;
 		margin-left: 7rem;
 	}
 
-	.credentials-ed{
+	.credentials-ed {
 		list-style-type: square;
 		font-size: 0.9rem;
 		font-family: sans-serif;
@@ -303,8 +333,14 @@ p::before{
 				"resume"
 				"video"
 				"footer";
+				font-family: Georgia, serif;
 			}
+			.ed {
+			width: 100%;
+			overflow-x: auto;
+			margin: 2rem 0;
 		}
+	}
 	
 		footer {
 			justify-self: center;
@@ -322,6 +358,8 @@ p::before{
 			margin: 0;
 			padding: 1rem;
 		}
+
+		
 
 		.credentials-ed {
 			justify-self: left;
