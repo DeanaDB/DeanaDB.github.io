@@ -40,11 +40,37 @@ footer p img {
 	vertical-align: middle;
 	margin-right: 0.5rem;
 }
+.phone {
+	transition: transform 0.2s ease;
+}
+.phone:hover {
+	animation: ring 0.4s infinite ease-in-out;
+}
+@keyframes ring {
+	0% {transform: rotate(0deg)}
+	25% {transform: rotate(10deg)}
+	50% {transform: rotate(0deg)}
+	75% {transform: rotate(-10deg)}
+	100% {transform: rotate(0deg)}
+}
+
+.mail {
+	transition: transform 0.2s ease;	
+}
+
+.mail:hover {
+	animation: rotate 1s infinite ease-in-out;
+	color:rgb(182, 17, 17);
+}
+
+@keyframes rotate {
+	100%{transform: rotateY(360deg);}
+}
 
 h3::first-letter { font-size: 1.5rem; 
 					color: #f97d00;
 }
-p{
+p {
 	margin-left: 2rem;
 }
 p::before{
