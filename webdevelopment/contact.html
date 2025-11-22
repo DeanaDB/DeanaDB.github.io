@@ -62,8 +62,8 @@
             welcome to reach out with questions about classwork, resources, or upcoming lessons. Communication is an important part
             of learning, so please don’t hesitate to contact me.  I’m here to support your curiosity and success in science.</p>
         <form action="mailto:ddb0fb@umsystem.edu?Subject=Form%20Submission" method="post" enctype="text/plain">
-            <p class="title-p">Title:
-                <select name="Title" class="title-drop">
+            <p class="title-p"><label for="title-select">Title:</label>
+                <select name="Title" class="title-drop" id="title-select">
                     <option>Mr.</option>
                     <option>Ms.</option>
                     <option>Mrs.</option>
@@ -73,7 +73,7 @@
                 <li><label for="form-name">Name:</label> <input type="text" name="fullname" autofocus required placeholder="First and Last Name" id="form-name"></li>
                 <li><label for="form-email">Email:</label> <input type="email" name="email" required placeholder="Email" id="form-email"></li> 
                 <li><label for="form-message">Your Message:</label> <textarea name="message" rows="10" cols="80" required placeholder="Type your message here." id="form-message"></textarea></li>
-                <li><input type="radio" name="urgent" value="urgent"> Urgent Message <small>(Please click if this is an urgent message.)</small></li>
+                <li><input type="radio" name="urgent" value="urgent"><label for="urgent-radio">Urgent Message</label><small>(Please click if this is an urgent message.)</small></li>
             </ul>
             <p><input type="submit" value="Send Message" class="submit"> <input type="reset" value="Clear Form" class="reset"></p>
         </form>
