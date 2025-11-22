@@ -13,7 +13,7 @@ html {
 	font-size: 20px;
 	width: 100%;
 }
-.nav{
+.nav {
 	list-style-type: none;
 	font-size: 1.8em;
 	background-color: #6ee6b1;
@@ -27,21 +27,21 @@ html {
 	margin: 0;
 	padding: 0.2em;
 }
-.nav li{
+.nav li {
 	list-style-type: none;
 }
-.nav a{
+.nav a {
 	color: black;
     text-decoration: none;
 }
-.nav a:hover{
+.nav a:hover {
 	color: white;
 }
 
-span{
+span {
 	font-size: 1.5rem;
 }
-.dropdown{
+.dropdown {
 	background: #6ee6b1;
 	position: absolute;
 	display: none;
@@ -49,16 +49,48 @@ span{
 	transform: translateX(-15%);	
 }
 
-.nav li:hover .dropdown{
+.nav li:hover .dropdown {
 	display: block;
 }
 
-.logo{
+.logo {
 	width: 7rem;
-	/*height: auto;*/
-	/*align-items: center;*/
-	/*margin: 1rem;*/
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+
+/*hero page nav*/
+
+.hero-bar {
+	font-family: Arial, Helvetica, sans-serif;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	width: auto;
+	background: none;
+}
+
+.hero-bar .nav {
+	display: flex;
+	flex-direction: row;
+	padding: 0;
+	margin: 0;
+	gap: 25px;
+	background: none;
+	
+}
+
+.hero-bar a {
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: .75rem;
+	background: none;
+}
+
+
+
 .mobile-menu {
 	display: none;
 }
@@ -117,6 +149,65 @@ span{
     flex-direction: column;
 }
 #lesson-layout, .mobile-menu a {
+		text-decoration: none;
+		gap: 1rem;
+		color: black;
+	}
+
+#resource-layout, #menu-toggle:checked ~ .mobile-menu {
+    display: flex;
+    flex-direction: column;
+}
+#resource-layout, .mobile-menu a {
+		text-decoration: none;
+		gap: 1rem;
+		color: black;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.nav-bar {
+		display: none;
+	}
+	.hamburger {
+		display: flex;	
+	}
+	.mobile-menu {
+		flex-direction: column;
+	}
+	.mobile-menu ul { 
+		display: flex;
+		flex-direction: column;
+		list-style: none;
+		gap: 1rem;
+	}
+	#layout-about, #menu-toggle:checked ~ .mobile-menu {
+    display: flex;
+    flex-direction: column;
+	
+}
+	#layout-about, .mobile-menu a {
+		text-decoration: none;
+		gap: 1rem;
+		color: black;
+	}
+
+
+#lessons-layout, #menu-toggle:checked ~ .mobile-menu {
+    display: flex;
+    flex-direction: column;
+}
+#lesson-layout, .mobile-menu a {
+		text-decoration: none;
+		gap: 1rem;
+		color: black;
+	}
+
+#resource-layout, #menu-toggle:checked ~ .mobile-menu {
+    display: flex;
+    flex-direction: column;
+}
+#resource-layout, .mobile-menu a {
 		text-decoration: none;
 		gap: 1rem;
 		color: black;

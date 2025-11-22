@@ -16,12 +16,37 @@
         </title>
         <!--link to external CSS for styling-->
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="nav.css">
         <link rel="icon" type="image/png" href="favicon.png">
     </head> 
 
     <body>
         <header>
             <!--Will contain image and navigation-->
+             <nav class="nav-bar hero-bar">
+                <ul class="nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="lesson.html">Lessons </a>
+                        
+                    </li>
+                    <li><a href="resources.html">Explore</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="hamburger"><img src="hamburger-menu.png" alt="menu icon"></label>
+                <!--https://icons8.com/icon/8113/menu-->
+                <nav class="mobile-menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="lesson.html">Lessons</a></li>
+                        <li><a href="resources.html">Explore</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
         </header>
         <!--add an image to go with welcome letter-->
             <section id="hero">
