@@ -167,10 +167,10 @@ p::before{
 		box-shadow: 0 1px 2px rgba(0,0,0,.5);
 	}
 	.cta-button {
-		transition: background-color 0.2s;
-		border-color: 0.2s;
-		top: 0.2s;
-		box-shadow: 0.2s;
+		transition: background-color 0.2s,
+		border-color 0.2s,
+		top 0.2s,
+		box-shadow 0.2s;
 	}
 
 	.cta-button:hover {
@@ -289,10 +289,10 @@ p::before{
 		box-shadow: 0 1px 2px rgba(0,0,0,.5);
 	}
 	.resume-button {
-		transition: background-color 0.2s;
-		border-color: 0.2s;
-		top: 0.2s;
-		box-shadow: 0.2s;
+		transition: background-color 0.2s,
+		border-color 0.2s,
+		top 0.2s,
+		box-shadow 0.2s;
 	}
 
 	.headshot{
@@ -592,10 +592,10 @@ p::before{
 		box-shadow: 0 1px 2px rgba(0,0,0,.5);
 	}
 	.commensalism-button {
-		transition: background-color 0.2s;
-		border-color: 0.2s;
-		top: 0.2s;
-		box-shadow: 0.2s;
+		transition: background-color 0.2s,
+		border-color 0.2s,
+		top 0.2s,
+		box-shadow 0.2s;
 	}
 	.mutualism-button {
 		text-decoration: none;
@@ -621,10 +621,10 @@ p::before{
 		box-shadow: 0 1px 2px rgba(0,0,0,.5);
 	}
 	.mutualism-button {
-		transition: background-color 0.2s;
-		border-color: 0.2s;
-		top: 0.2s;
-		box-shadow: 0.2s;
+		transition: background-color 0.2s,
+		border-color 0.2s,
+		top 0.2s,
+		box-shadow 0.2s;
 	}
 
 	.mutualism-link {
@@ -674,10 +674,10 @@ p::before{
 		box-shadow: 0 1px 2px rgba(0,0,0,.5);
 	}
 	.parasitism-button {
-		transition: background-color 0.2s;
-		border-color: 0.2s;
-		top: 0.2s;
-		box-shadow: 0.2s;
+		transition: background-color 0.2s,
+		border-color 0.2s,
+		top 0.2s,
+		box-shadow 0.2s;
 	}
 /*Lessons Layout*/
 
@@ -896,10 +896,10 @@ p::before{
 		box-shadow: 0 1px 2px rgba(0,0,0,.5);
 	}
 	.explore-cta {
-		transition: background-color 0.2s;
-		border-color: 0.2s;
-		top: 0.2s;
-		box-shadow: 0.2s;
+		transition: background-color 0.2s,
+		border-color 0.2s,
+		top 0.2s,
+		box-shadow 0.2s;
 	}
 
 	.resource-box {
@@ -1109,10 +1109,10 @@ p::before{
 		box-shadow: 0 1px 2px rgba(0,0,0,.5);
 	}
 	.submit-button {
-		transition: background-color 0.2s;
-		border-color: 0.2s;
-		top: 0.2s;
-		box-shadow: 0.2s;
+		transition: background-color 0.2s,
+		border-color 0.2s,
+		top 0.2s,
+		box-shadow 0.2s;
 	}
 
 	.reset {
@@ -1138,10 +1138,10 @@ p::before{
 		box-shadow: 0 1px 2px rgba(0,0,0,.5);
 	}
 	.reset {
-		transition: background-color 0.2s;
-		border-color: 0.2s;
-		top: 0.2s;
-		box-shadow: 0.2s;
+		transition: background-color 0.2s,
+		border-color 0.2s,
+		top 0.2s,
+		box-shadow 0.2s;
 	}
 
 	/*Contact Responsive*/
