@@ -470,6 +470,17 @@ p::before{
 		
 		}
 
+		.resume-button:active {
+		top: 3px;
+		box-shadow: 0 1px 2px rgba(0,0,0,.5);
+	}
+	.resume-button {
+		transition: background-color 0.2s,
+		border-color 0.2s,
+		top 0.2s,
+		box-shadow 0.2s;
+	}
+
 		video {
 			max-width: 100%;
 			height: auto;
