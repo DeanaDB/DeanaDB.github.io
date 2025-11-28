@@ -133,6 +133,28 @@ span {
 		list-style: none;
 		gap: 1rem;
 	}
+
+	.mobile-menu ul ul.dropdown {
+		position: static;
+		display: none;
+	}
+
+	.mobile-menu li:hover > .dropdown {
+		display: block;
+	}
+	.mobile-menu .dropdown li {
+		padding: 0.75rem;
+	}
+
+	span {
+		font-size: 0.75rem;
+	}
+
+	.dropdown {
+		background: none;
+		
+	}
+
 	#layout-about, #menu-toggle:checked ~ .mobile-menu {
     display: flex;
     flex-direction: column;

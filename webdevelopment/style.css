@@ -231,7 +231,7 @@ p::before{
 	}
 
 	th {
-		background-color: #6cbbba
+		background-color: #6cbbba;
 	}
 
 	td {
@@ -421,6 +421,7 @@ p::before{
 			width: 100%;
 			overflow-x: auto;
 			margin: 2rem 0;
+			font-size: 0.75rem;
 		}
 	}
 	
@@ -913,7 +914,7 @@ p::before{
 		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.70);
 		flex-direction: column;
 		padding: 0;
-		margin: 0rem;
+		margin: 4rem 1rem 5rem 1rem;
 		box-sizing: border-box;
 		display: flex;
 		flex-direction: column;
