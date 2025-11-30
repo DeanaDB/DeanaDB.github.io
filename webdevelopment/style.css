@@ -1,5 +1,4 @@
 
-
 @font-face {
     font-family: 'introrustg-base2line';
     src: url('introrustg-base2line-webfont.woff2') format('woff2'),
@@ -8,7 +7,8 @@
     font-style: normal;
 }
 
-
+/*Custom font used throughout website*/
+/*Text shadowing and letter spacing applied to h1, h2, h3 for readability on all pages except for index didn't apply shadowing-too much*/
 
 html {
 	font-family: 'Fredoka', sans-serif;
@@ -96,7 +96,7 @@ p::before{
 /*index page*/
 	#hero {
 		width: auto;
-		height: auto;
+		height: 100%;
     	background-image: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)), url('herobackground.jpg');
 		background-size: cover;
 		background-position: center;
@@ -104,6 +104,20 @@ p::before{
 		color: white;
 	}
 
+	.hero-page #hero {
+    flex: 1;
+}
+	.hero-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    margin: 0;        
+}
+
+
+.hero-page footer {
+    margin-top: auto;
+}
 	.internal-page{
 		background-color: #8adddc;
 	}
@@ -121,18 +135,18 @@ p::before{
 		font-size: 3rem;
     	margin: 0 0 2rem 0;	
 		text-align: center;
+		letter-spacing: 0.2rem;
 	}
 
 	.info p {
 		font-size: 1rem;
-		max-width: 55%;
+		max-width: 100%;
 		margin: 0;
 		line-height: 1.7rem;
 		text-align: left;
-		margin-top: 1rem;
-		padding-left: 7rem;
+		margin-top: 1rem 1rem;
+		padding:5rem;
 		line-height: 1.7rem;
-		word-spacing: 0.5rem;
 		letter-spacing: normal;
 	}
 
@@ -148,13 +162,16 @@ p::before{
 		letter-spacing: normal;
 	}
 
+
 	.cta-button {
 		text-decoration: none;
 		background-color: #f97d00;
 		border-radius: 35px;
 		font-size: 1.8rem;
-		float: right;
-		margin-right: 15%;
+		display: block;  
+		width: fit-content;     
+   		margin: auto;  
+		text-align: center;
 		padding: 0.5em 0.5rem;
 		margin-top: 2rem;
 		color: rgb(8, 8, 8);
@@ -200,9 +217,12 @@ p::before{
 				
 /*--About Me--*/
 	.about-h1 {
-		font-size: 1.5rem;
+		font-size: 2rem;
 		justify-self: center;
+		text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+		letter-spacing: 0.2rem;
 	}			
+
 	.about-p {
 		font-size: 1rem;
 		line-height: 1.7rem;
@@ -574,7 +594,36 @@ p::before{
 	}
 
 /*Lessons*/
+	/*Text shadowing and letter spacing applied to h1, h2, h3 for readability*/
+ 	.main-h h1 {
+		font-size: 2rem;
+		justify-self: center;
+		text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+		letter-spacing: 0.2rem;
+	}	
+	
+	.main-h h2 {
+		font-size: 1.5rem;
+		justify-self: center;
+		text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+		letter-spacing: 0.1rem;
+	}			
 
+	#lesson1 {
+		text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+		letter-spacing: 0.1rem;
+	}	
+	
+	#lesson2 {
+		text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+		letter-spacing: 0.1rem;
+	}		
+
+	#lesson3 {
+		text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+		letter-spacing: 0.1rem;
+	}		
+	
 	.commensalism-img {
 		width: 400px;
 		border-radius: 20px;
@@ -955,6 +1004,13 @@ p::before{
 
 	.resource-h {
 		text-align: center;
+		text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+		letter-spacing: 0.2rem;
+	}
+
+	.resource-p {
+		text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+		letter-spacing: 0.1rem;
 	}
 
 	#resource-layout {
@@ -1061,6 +1117,8 @@ p::before{
 
 	.contact-h {
 		text-align: center;
+		text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+		letter-spacing: 0.2rem;
 	}
 	.internal-page main p {
 		word-spacing: 0.5rem;
