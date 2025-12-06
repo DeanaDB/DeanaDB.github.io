@@ -32,22 +32,34 @@ footer {
 	font-family: Georgia, serif;
 	box-sizing: border-box;
 }
+
+footer a {
+    color: inherit;   
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
 footer img {
 	width: 30px;
 	height: 30px;
-
 }
 
 footer p img {
 	vertical-align: middle;
 	margin-right: 0.5rem;
 }
+
 .phone {
 	transition: transform 0.2s ease;
 }
+
 .phone:hover {
 	animation: ring 0.4s infinite ease-in-out;
 }
+
 @keyframes ring {
 	0% {transform: rotate(0deg)}
 	25% {transform: rotate(10deg)}
@@ -61,8 +73,7 @@ footer p img {
 }
 
 .mail:hover {
-	animation: rotate 1s infinite ease-in-out;
-	
+	animation: rotate 1s infinite ease-in-out;	
 }
 
 @keyframes rotate {
@@ -76,17 +87,17 @@ footer p img {
 }
 
 .logo:hover {
-	animation: rotate 1s infinite ease-in-out;
-	
+	animation: rotate 1s infinite ease-in-out;	
 }
-
 
 h3::first-letter { font-size: 1.5rem; 
 					color: #f97d00;
 }
+
 p {
 	margin-left: 2rem;
 }
+
 p::before{
 	content: "";
 	display: inline-block;
@@ -107,6 +118,7 @@ p::before{
 	.hero-page #hero {
     flex: 1;
 }
+
 	.hero-page {
     display: flex;
     flex-direction: column;
@@ -114,10 +126,10 @@ p::before{
     margin: 0;        
 }
 
-
 .hero-page footer {
     margin-top: auto;
 }
+
 	.internal-page{
 		background-color: #8adddc;
 	}
@@ -133,7 +145,7 @@ p::before{
 
 	.info h1 {
 		font-size: 3rem;
-    	margin: 0 0 2rem 0;	
+    	margin: 0;	
 		text-align: center;
 		letter-spacing: 0.2rem;
 	}
@@ -143,8 +155,7 @@ p::before{
 		max-width: 100%;
 		margin: 0;
 		line-height: 1.7rem;
-		text-align: left;
-		margin-top: 1rem 1rem;
+		text-align: left;	
 		padding:5rem;
 		line-height: 1.7rem;
 		letter-spacing: normal;
@@ -161,7 +172,6 @@ p::before{
 		word-spacing: 0.5rem;
 		letter-spacing: normal;
 	}
-
 
 	.cta-button {
 		text-decoration: none;
@@ -183,6 +193,7 @@ p::before{
 		top: 3px;
 		box-shadow: 0 1px 2px rgba(0,0,0,.5);
 	}
+
 	.cta-button {
 		transition: background-color 0.2s,
 		border-color 0.2s,
@@ -193,6 +204,7 @@ p::before{
 	.cta-button:hover {
 		color: #fff;
 	}
+
 @media screen and (max-width: 600px) { 
 
 	.mobile-menu ul li a {
@@ -228,8 +240,6 @@ p::before{
 		line-height: 1.7rem;
 		word-spacing: 0.5rem;
 		letter-spacing: normal;
-		
-		
 	}
 
 	table, th, td {
@@ -240,6 +250,7 @@ p::before{
 	.cap {
 		font-size: 1.5rem;
 	}
+
 	table {
 		box-shadow: 6px 6px 5px gray;
 		margin: 5rem 2rem;
@@ -308,6 +319,7 @@ p::before{
 		top: 3px;
 		box-shadow: 0 1px 2px rgba(0,0,0,.5);
 	}
+
 	.resume-button {
 		transition: background-color 0.2s,
 		border-color 0.2s,
@@ -315,18 +327,18 @@ p::before{
 		box-shadow 0.2s;
 	}
 
-	.headshot{
+	.headshot {
 		width: 150px;
 		border-radius: 20px;
 		box-shadow: 6px 6px 5px gray;
 	}
 
-	.aboutmevideo{
+	.aboutmevideo {
 		border-radius: 20px;
 		box-shadow: 6px 6px 5px #f97d00;
 	}
 
-	.video{
+	.video {
 		text-align: center;
 	}
 /*About Me Layout*/	
@@ -448,52 +460,44 @@ p::before{
 		footer {
 			justify-self: center;
 			align-self: center;
-			
-			
 		}
+
 		.about-p {
 			justify-self: center;
 			text-align: left;
 			margin: 0;
-			
+			word-spacing: 0.2rem;			
 		}
-		
 		
 		.ed-h {
 			justify-self: left;
 			text-align: left;
 			margin: 0;
-			padding: 1rem;
-			
+			padding: 1rem;	
 		}
-
-		
 
 		.credentials-ed {
 			justify-self: left;
 			text-align: left;
 			margin: 0;
-			
-
 		}
 
 		.credentials-cert {
 			justify-self: left;
 			text-align: left;
-			margin: 0;
-			
+			margin: 0;	
 		}
 	
 		.resume-button {
 		width: fit-content;
 		font-family: 'introrustg-base2line';
-		
 		}
 
 		.resume-button:active {
 		top: 3px;
 		box-shadow: 0 1px 2px rgba(0,0,0,.5);
 	}
+
 	.resume-button {
 		transition: background-color 0.2s,
 		border-color 0.2s,
@@ -504,8 +508,8 @@ p::before{
 		video {
 			max-width: 100%;
 			height: auto;
-		
 		}
+
 		footer {
 			font-family: Arial, Helvetica, sans-serif;
 		}
@@ -607,7 +611,11 @@ p::before{
 		justify-self: center;
 		text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 		letter-spacing: 0.1rem;
-	}			
+	}	
+	
+	.main-h p {
+		word-spacing: 0.2rem;
+	}
 
 	#lesson1 {
 		text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
@@ -624,6 +632,10 @@ p::before{
 		letter-spacing: 0.1rem;
 	}		
 	
+	.lesson3p p, .lesson2p p, .lesson1p p {
+		word-spacing: 0.2rem;
+	}
+
 	.commensalism-img {
 		width: 400px;
 		border-radius: 20px;
@@ -648,16 +660,19 @@ p::before{
 	.commensalism-button:hover {
 		color: #fff;
 	}
+
 .commensalism-button:active {
 		top: 3px;
 		box-shadow: 0 1px 2px rgba(0,0,0,.5);
 	}
+
 	.commensalism-button {
 		transition: background-color 0.2s,
 		border-color 0.2s,
 		top 0.2s,
 		box-shadow 0.2s;
 	}
+
 	.mutualism-button {
 		text-decoration: none;
 		background-color: #f97d00;
@@ -707,10 +722,12 @@ p::before{
 	margin-top: 1.5rem;
 	color: black;	
 }
+
 .video-parasitism {
 	text-align: center;
 	font-size: 1.5rem;
 }
+
 .parasitism-button {
 		text-decoration: none;
 		background-color: #f97d00;
@@ -734,12 +751,14 @@ p::before{
 		top: 3px;
 		box-shadow: 0 1px 2px rgba(0,0,0,.5);
 	}
+
 	.parasitism-button {
 		transition: background-color 0.2s,
 		border-color 0.2s,
 		top 0.2s,
 		box-shadow 0.2s;
 	}
+
 /*Lessons Layout*/
 
 #lessons-layout {
@@ -793,6 +812,7 @@ p::before{
 	.commensalism-img:active {
 		transform: scale(3);
 	}
+
 	.commensalism-button {
 		grid-area: worksheet1;
 		display: inline-block;
@@ -956,6 +976,7 @@ p::before{
 		top: 3px;
 		box-shadow: 0 1px 2px rgba(0,0,0,.5);
 	}
+
 	.explore-cta {
 		transition: background-color 0.2s,
 		border-color 0.2s,
@@ -1001,7 +1022,6 @@ p::before{
 		width: 0;
 	}
 	
-
 	.resource-h {
 		text-align: center;
 		text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
@@ -1130,10 +1150,12 @@ p::before{
 		text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 		letter-spacing: 0.2rem;
 	}
+
 	.internal-page main p {
-		word-spacing: 0.5rem;
+		word-spacing: 0.2rem;
 		line-height: 1.7rem;
 	}
+	
 	.contact-list {
 		list-style-type: none;
 	}
